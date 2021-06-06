@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
+    div.a {
+        text-align: center;
+    }
+</style>
     body {
         font-family: "Times New Roman", Georgia, Serif;
     }
@@ -56,14 +60,16 @@
         <hr>
 
         <!-- Menu Section -->
-        <div class="w3-row w3-padding-64" id="menu">
-            <div class="w3-col l6 w3-padding-large">
-                <p style="text-align:center"><h1 class="w3-center">Our Menu</h1><br></p>
+        <div class="a">
+            <div class="w3-row w3-padding-64" id="menu">
+                <div class="w3-col l6 w3-padding-large">
+                    <h1 class="w3-center">Our Menu</h1><br>
 
 
-                  <p style="text-align:center;">
-                    <img src="https://th.bing.com/th/id/Rf68aef4bdfa63f4512a107b870d76725?rik=wDnypOYn3sZTUA&riu=http%3a%2f%2fcdn.beau-coup.com%2fcontent-images%2f150829%2f150829-0.jpg&ehk=Cuy6ZXCEFqMEvTMszTLsIraNQFNrRI2qZoWu%2fBKUmpY%3d&risl=&pid=ImgRaw"style="width:200%"</p>
-            </div>
+                    <p style="text-align:center;">
+                        <img src="https://th.bing.com/th/id/Rf68aef4bdfa63f4512a107b870d76725?rik=wDnypOYn3sZTUA&riu=http%3a%2f%2fcdn.beau-coup.com%2fcontent-images%2f150829%2f150829-0.jpg&ehk=Cuy6ZXCEFqMEvTMszTLsIraNQFNrRI2qZoWu%2fBKUmpY%3d&risl=&pid=ImgRaw" style="width:200%"
+                    </p>
+                </div>
             </div>
 
             <hr>
@@ -75,33 +81,33 @@
                 <html>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
                 <body>
-                    
-                        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
-                        <script>
-                            var xValues = ["Vintage Port", "Dry Reisling", "Dry Red Wine", "Dry White Wine", "Champagne"];
+                    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
-                            var yValues = [8, 5, 4, 3, 1, 0];
-                            var barColors = ["purple", "red", "green", "blue", "yellow"];
+                    <script>
+                        var xValues = ["Vintage Port", "Dry Reisling", "Dry Red Wine", "Dry White Wine", "Champagne"];
 
-                            new Chart("myChart", {
-                                type: "bar",
-                                data: {
-                                    labels: xValues,
-                                    datasets: [{
-                                        backgroundColor: barColors,
-                                        data: yValues
-                                    }]
-                                },
-                                options: {
-                                    legend: { display: false },
-                                    title: {
-                                        display: true,
-                                        text: "Carbs in Wine"
-                                    }
+                        var yValues = [8, 5, 4, 3, 1, 0];
+                        var barColors = ["purple", "red", "green", "blue", "yellow"];
+
+                        new Chart("myChart", {
+                            type: "bar",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                title: {
+                                    display: true,
+                                    text: "Carbs in Wine"
                                 }
-                            });
-                        </script>
+                            }
+                        });
+                    </script>
 
                 </body>
             </html>
