@@ -59,50 +59,51 @@
         <!-- Menu Section -->
         <div class="w3-row w3-padding-64" id="menu">
             <div class="w3-col l6 w3-padding-large">
-                <h1 class="w3-middle">Our Menu</h1><br>
+                <h1 class="w3-center">Our Menu</h1><br>
 
 
-                <div class="w3-col l6 w3-padding-large">
-                    <img src="https://th.bing.com/th/id/Rf68aef4bdfa63f4512a107b870d76725?rik=wDnypOYn3sZTUA&riu=http%3a%2f%2fcdn.beau-coup.com%2fcontent-images%2f150829%2f150829-0.jpg&ehk=Cuy6ZXCEFqMEvTMszTLsIraNQFNrRI2qZoWu%2fBKUmpY%3d&risl=&pid=ImgRaw" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
-                </div>
+                     <p style="text-align:center;">
+                       <img src="https://th.bing.com/th/id/Rf68aef4bdfa63f4512a107b870d76725?rik=wDnypOYn3sZTUA&riu=http%3a%2f%2fcdn.beau-coup.com%2fcontent-images%2f150829%2f150829-0.jpg&ehk=Cuy6ZXCEFqMEvTMszTLsIraNQFNrRI2qZoWu%2fBKUmpY%3d&risl=&pid=ImgRaw" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%"></p>
+</div>
             </div>
 
             <hr>
 
             <!-- Health Conscious Wine Lovers -->
             <div class="w3-row w3-padding-64" id="Health Conscious Wine Lovers">
-                <h1 class="w3-middle">Health Conscious Wine Lovers</h1><br>
+                <h1 class="w3-center">Health Conscious Wine Lovers</h1><br>
                 <!DOCTYPE html>
                 <html>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
                 <body>
+                    <h1 class="w3-center">
+                        </h>
+                        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
-                    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                        <script>
+                            var xValues = ["Vintage Port", "Dry Reisling", "Dry Red Wine", "Dry White Wine", "Champagne"];
 
-                    <script>
-                        var xValues = ["Vintage Port", "Dry Reisling", "Dry Red Wine", "Dry White Wine", "Champagne"];
+                            var yValues = [8, 5, 4, 3, 1, 0];
+                            var barColors = ["purple", "red", "green", "blue", "yellow"];
 
-                        var yValues = [8, 5, 4, 3, 1, 0];
-                        var barColors = ["purple", "red", "green", "blue", "yellow"];
-
-                        new Chart("myChart", {
-                            type: "bar",
-                            data: {
-                                labels: xValues,
-                                datasets: [{
-                                    backgroundColor: barColors,
-                                    data: yValues
-                                }]
-                            },
-                            options: {
-                                legend: { display: false },
-                                title: {
-                                    display: true,
-                                    text: "Carbs in Wine"
+                            new Chart("myChart", {
+                                type: "bar",
+                                data: {
+                                    labels: xValues,
+                                    datasets: [{
+                                        backgroundColor: barColors,
+                                        data: yValues
+                                    }]
+                                },
+                                options: {
+                                    legend: { display: false },
+                                    title: {
+                                        display: true,
+                                        text: "Carbs in Wine"
+                                    }
                                 }
-                            }
-                        });
-                    </script>
+                            });
+                        </script>
 
                 </body>
             </html>
